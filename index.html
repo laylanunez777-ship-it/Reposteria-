@@ -1095,7 +1095,7 @@ function renderRecipes(){
       <div class="recipe-lockbox" id="lockbox-${r.id}"><span class="rp">${fmt(r.price)}</span><button class="unlock-btn" onclick="unlockRecipe('${r.id}')">Desbloquear receta</button></div>
       <div class="unlocked-flag" id="flag-${r.id}">${ico('check')}Receta desbloqueada</div>
       <div class="recipe-full" id="full-${r.id}">${r.full}</div>
-    </div>`).join('');
+    </div>`).join(''); 
 }
 function unlockRecipe(id){
   checkout = {mode:'recipe', step:2, method:'tarjeta', recipeId:id, data:{name:'', contact:''}};
